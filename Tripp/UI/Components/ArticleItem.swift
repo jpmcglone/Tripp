@@ -22,7 +22,7 @@ struct ArticleItem: View {
                 .padding(10)
         }
         .frame(maxWidth: .greatestFiniteMagnitude, alignment: .topLeading)
-        .background(Color.black.opacity(0.2))
-        .cornerRadius(20)
+        .background(Color.black.opacity(0.1))
+        .cornerRadius(7)
     }
 }

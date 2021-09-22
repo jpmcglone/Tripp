@@ -15,7 +15,7 @@ class ArticlesViewModel: ObservableObject {
     
     func setupPublishers() {
         $query
-            .debounce(for: 0.5, scheduler: DispatchQueue.main)
+            .debounce(for: 0.25, scheduler: DispatchQueue.main)
             .sink(receiveValue: fetch)
             .store(in: &cancellables)
         
