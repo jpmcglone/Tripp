@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F002514726FA969000643C18 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002514626FA969000643C18 /* ArticleService.swift */; };
+		F002514A26FA96D800643C18 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F002514926FA96D800643C18 /* Alamofire */; };
+		F002514D26FA984F00643C18 /* Envelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002514C26FA984F00643C18 /* Envelope.swift */; };
+		F002514F26FA990E00643C18 /* ArticlesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002514E26FA990E00643C18 /* ArticlesResponse.swift */; };
+		F002515126FA994300643C18 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515026FA994300643C18 /* Meta.swift */; };
+		F002515326FA998300643C18 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515226FA998300643C18 /* Article.swift */; };
+		F002515726FA99DD00643C18 /* Headline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515626FA99DD00643C18 /* Headline.swift */; };
+		F002515926FA9A0000643C18 /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515826FA9A0000643C18 /* Multimedia.swift */; };
+		F002515C26FA9C1E00643C18 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515B26FA9C1E00643C18 /* APIClient.swift */; };
+		F002515F26FAB1F600643C18 /* Dictionary+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515E26FAB1F600643C18 /* Dictionary+Additions.swift */; };
+		F0AD11D526F91656006FA8EB /* TrippApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD11D426F91656006FA8EB /* TrippApp.swift */; };
+		F0AD11D726F91656006FA8EB /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD11D626F91656006FA8EB /* ArticlesView.swift */; };
+		F0AD11D926F91657006FA8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AD11D826F91657006FA8EB /* Assets.xcassets */; };
+		F0AD11DC26F91657006FA8EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AD11DB26F91657006FA8EB /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F002514626FA969000643C18 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		F002514C26FA984F00643C18 /* Envelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envelope.swift; sourceTree = "<group>"; };
+		F002514E26FA990E00643C18 /* ArticlesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesResponse.swift; sourceTree = "<group>"; };
+		F002515026FA994300643C18 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		F002515226FA998300643C18 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F002515626FA99DD00643C18 /* Headline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headline.swift; sourceTree = "<group>"; };
+		F002515826FA9A0000643C18 /* Multimedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multimedia.swift; sourceTree = "<group>"; };
+		F002515B26FA9C1E00643C18 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F002515E26FAB1F600643C18 /* Dictionary+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Additions.swift"; sourceTree = "<group>"; };
+		F0AD11D126F91656006FA8EB /* Tripp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AD11D426F91656006FA8EB /* TrippApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippApp.swift; sourceTree = "<group>"; };
+		F0AD11D626F91656006FA8EB /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		F0AD11D826F91657006FA8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0AD11DB26F91657006FA8EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0AD11DD26F91657006FA8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0AD11CE26F91656006FA8EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F002514A26FA96D800643C18 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F002514526FA968700643C18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F002514626FA969000643C18 /* ArticleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F002514B26FA984600643C18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F002515526FA999100643C18 /* Articles */,
+				F002515426FA998800643C18 /* Common */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F002515426FA998800643C18 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F002514C26FA984F00643C18 /* Envelope.swift */,
+				F002515026FA994300643C18 /* Meta.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F002515526FA999100643C18 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				F002514E26FA990E00643C18 /* ArticlesResponse.swift */,
+				F002515226FA998300643C18 /* Article.swift */,
+				F002515626FA99DD00643C18 /* Headline.swift */,
+				F002515826FA9A0000643C18 /* Multimedia.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		F002515A26FA9C1200643C18 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F002515B26FA9C1E00643C18 /* APIClient.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F002515D26FAB1EC00643C18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F002515E26FAB1F600643C18 /* Dictionary+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F0AD11C826F91656006FA8EB = {
+			isa = PBXGroup;
+			children = (
+				F0AD11D326F91656006FA8EB /* Tripp */,
+				F0AD11D226F91656006FA8EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0AD11D226F91656006FA8EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD11D126F91656006FA8EB /* Tripp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0AD11D326F91656006FA8EB /* Tripp */ = {
+			isa = PBXGroup;
+			children = (
+				F002515D26FAB1EC00643C18 /* Extensions */,
+				F002515A26FA9C1200643C18 /* Utils */,
+				F002514B26FA984600643C18 /* Models */,
+				F002514526FA968700643C18 /* Services */,
+				F0AD11D426F91656006FA8EB /* TrippApp.swift */,
+				F0AD11D626F91656006FA8EB /* ArticlesView.swift */,
+				F0AD11D826F91657006FA8EB /* Assets.xcassets */,
+				F0AD11DD26F91657006FA8EB /* Info.plist */,
+				F0AD11DA26F91657006FA8EB /* Preview Content */,
+			);
+			path = Tripp;
+			sourceTree = "<group>";
+		};
+		F0AD11DA26F91657006FA8EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD11DB26F91657006FA8EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0AD11D026F91656006FA8EB /* Tripp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AD11E026F91657006FA8EB /* Build configuration list for PBXNativeTarget "Tripp" */;
+			buildPhases = (
+				F0AD11CD26F91656006FA8EB /* Sources */,
+				F0AD11CE26F91656006FA8EB /* Frameworks */,
+				F0AD11CF26F91656006FA8EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tripp;
+			packageProductDependencies = (
+				F002514926FA96D800643C18 /* Alamofire */,
+			);
+			productName = Tripp;
+			productReference = F0AD11D126F91656006FA8EB /* Tripp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0AD11C926F91656006FA8EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F0AD11D026F91656006FA8EB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = F0AD11CC26F91656006FA8EB /* Build configuration list for PBXProject "Tripp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0AD11C826F91656006FA8EB;
+			packageReferences = (
+				F002514826FA96D800643C18 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F0AD11D226F91656006FA8EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0AD11D026F91656006FA8EB /* Tripp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0AD11CF26F91656006FA8EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AD11DC26F91657006FA8EB /* Preview Assets.xcassets in Resources */,
+				F0AD11D926F91657006FA8EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0AD11CD26F91656006FA8EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F002515326FA998300643C18 /* Article.swift in Sources */,
+				F002514D26FA984F00643C18 /* Envelope.swift in Sources */,
+				F0AD11D726F91656006FA8EB /* ArticlesView.swift in Sources */,
+				F002515C26FA9C1E00643C18 /* APIClient.swift in Sources */,
+				F002515126FA994300643C18 /* Meta.swift in Sources */,
+				F002515F26FAB1F600643C18 /* Dictionary+Additions.swift in Sources */,
+				F0AD11D526F91656006FA8EB /* TrippApp.swift in Sources */,
+				F002515726FA99DD00643C18 /* Headline.swift in Sources */,
+				F002515926FA9A0000643C18 /* Multimedia.swift in Sources */,
+				F002514726FA969000643C18 /* ArticleService.swift in Sources */,
+				F002514F26FA990E00643C18 /* ArticlesResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F0AD11DE26F91657006FA8EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0AD11DF26F91657006FA8EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0AD11E126F91657006FA8EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Tripp/Preview Content\"";
+				DEVELOPMENT_TEAM = 28HAX9NHD8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tripp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmcglone.Tripp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0AD11E226F91657006FA8EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Tripp/Preview Content\"";
+				DEVELOPMENT_TEAM = 28HAX9NHD8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tripp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmcglone.Tripp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0AD11CC26F91656006FA8EB /* Build configuration list for PBXProject "Tripp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AD11DE26F91657006FA8EB /* Debug */,
+				F0AD11DF26F91657006FA8EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0AD11E026F91657006FA8EB /* Build configuration list for PBXNativeTarget "Tripp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AD11E126F91657006FA8EB /* Debug */,
+				F0AD11E226F91657006FA8EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F002514826FA96D800643C18 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F002514926FA96D800643C18 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F002514826FA96D800643C18 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F0AD11C926F91656006FA8EB /* Project object */;
+}
