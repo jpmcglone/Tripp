@@ -2,14 +2,21 @@ import SwiftUI
 
 @main
 struct TrippApp: App {
-    @StateObject var articles = ArticleService(
-        apiKey: "AmGyRUolA0PvrJK5hrfAweLzqjmIfp7E"
-    )
+    @StateObject var articlesViewModel: ArticlesViewModel
+    
+    init() {
+        let articlesService = ArticleService(
+            apiKey: "AmGyRUolA0PvrJK5hrfAweLzqjmIfp7E"
+        )
+        
+        _articlesViewModel = StateObject(wrappedValue: ArticlesViewModel(service: articlesService))
+    }
     
     var body: some Scene {
         WindowGroup {
-            ArticlesView()
-                .environmentObject(articles)
+            NavigationView {
+                ArticlesView(model: articlesViewModel)
+            }
         }
     }
 }

@@ -23,7 +23,15 @@ class ArticleService: ObservableObject {
     
     func fetchArticles(withQuery query: String) {
         let uri = "svc/search/v2/articlesearch.json"
-        let parameters = ["q": query]
+        
+        let sanitizedQuery = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard !sanitizedQuery.isEmpty else {
+            clearArticles()
+            return
+        }
+        
+        let parameters = ["q": sanitizedQuery]
         
         fetchArticlesCancellable = api
             .get(uri, parameters: parameters)
@@ -32,5 +40,9 @@ class ArticleService: ObservableObject {
             } receiveValue: { (envelope: Envelope<ArticlesResponse>) in
                 self.articles = envelope.response.articles
             }
+    }
+    
+    func clearArticles() {
+        articles.removeAll()
     }
 }

@@ -1,3 +1,5 @@
+import Foundation
+
 struct Article: Codable {
     let webURL: String
     let snippet, leadParagraph: String
@@ -9,6 +11,9 @@ struct Article: Codable {
     // ...
     
     let mobileImage: String?
+    var mobileImageUrl: URL? {
+        URL(string: mobileImage ?? "")
+    }
 
     enum CodingKeys: String, CodingKey {
         case webURL = "web_url"
@@ -34,7 +39,8 @@ struct Article: Codable {
         }
         
         if (filteredMultiMedia.count > 0) {
-            mobileImage = filteredMultiMedia[0].url
+            // TODO: Construct this better
+            mobileImage = "https://www.nytimes.com/" + filteredMultiMedia[0].url
             height = filteredMultiMedia[0].height
         } else {
             mobileImage = nil

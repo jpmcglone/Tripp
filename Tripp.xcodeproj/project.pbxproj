@@ -17,6 +17,9 @@
 		F002515926FA9A0000643C18 /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515826FA9A0000643C18 /* Multimedia.swift */; };
 		F002515C26FA9C1E00643C18 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515B26FA9C1E00643C18 /* APIClient.swift */; };
 		F002515F26FAB1F600643C18 /* Dictionary+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002515E26FAB1F600643C18 /* Dictionary+Additions.swift */; };
+		F002516426FAB4E500643C18 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002516326FAB4E500643C18 /* ArticlesViewModel.swift */; };
+		F002516626FABB6E00643C18 /* ArticleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002516526FABB6E00643C18 /* ArticleItem.swift */; };
+		F002516926FABBE100643C18 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F002516826FABBE100643C18 /* SDWebImageSwiftUI */; };
 		F0AD11D526F91656006FA8EB /* TrippApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD11D426F91656006FA8EB /* TrippApp.swift */; };
 		F0AD11D726F91656006FA8EB /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD11D626F91656006FA8EB /* ArticlesView.swift */; };
 		F0AD11D926F91657006FA8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AD11D826F91657006FA8EB /* Assets.xcassets */; };
@@ -33,6 +36,8 @@
 		F002515826FA9A0000643C18 /* Multimedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multimedia.swift; sourceTree = "<group>"; };
 		F002515B26FA9C1E00643C18 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		F002515E26FAB1F600643C18 /* Dictionary+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Additions.swift"; sourceTree = "<group>"; };
+		F002516326FAB4E500643C18 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		F002516526FABB6E00643C18 /* ArticleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleItem.swift; sourceTree = "<group>"; };
 		F0AD11D126F91656006FA8EB /* Tripp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AD11D426F91656006FA8EB /* TrippApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippApp.swift; sourceTree = "<group>"; };
 		F0AD11D626F91656006FA8EB /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F002516926FABBE100643C18 /* SDWebImageSwiftUI in Frameworks */,
 				F002514A26FA96D800643C18 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +112,32 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F002516026FAB29000643C18 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD11D626F91656006FA8EB /* ArticlesView.swift */,
+				F002516326FAB4E500643C18 /* ArticlesViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F002516126FAB29700643C18 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F002516226FAB29C00643C18 /* Components */,
+				F002516026FAB29000643C18 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F002516226FAB29C00643C18 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F002516526FABB6E00643C18 /* ArticleItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F0AD11C826F91656006FA8EB = {
 			isa = PBXGroup;
 			children = (
@@ -125,12 +157,12 @@
 		F0AD11D326F91656006FA8EB /* Tripp */ = {
 			isa = PBXGroup;
 			children = (
+				F002516126FAB29700643C18 /* UI */,
 				F002515D26FAB1EC00643C18 /* Extensions */,
 				F002515A26FA9C1200643C18 /* Utils */,
 				F002514B26FA984600643C18 /* Models */,
 				F002514526FA968700643C18 /* Services */,
 				F0AD11D426F91656006FA8EB /* TrippApp.swift */,
-				F0AD11D626F91656006FA8EB /* ArticlesView.swift */,
 				F0AD11D826F91657006FA8EB /* Assets.xcassets */,
 				F0AD11DD26F91657006FA8EB /* Info.plist */,
 				F0AD11DA26F91657006FA8EB /* Preview Content */,
@@ -164,6 +196,7 @@
 			name = Tripp;
 			packageProductDependencies = (
 				F002514926FA96D800643C18 /* Alamofire */,
+				F002516826FABBE100643C18 /* SDWebImageSwiftUI */,
 			);
 			productName = Tripp;
 			productReference = F0AD11D126F91656006FA8EB /* Tripp.app */;
@@ -194,6 +227,7 @@
 			mainGroup = F0AD11C826F91656006FA8EB;
 			packageReferences = (
 				F002514826FA96D800643C18 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F002516726FABBE100643C18 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = F0AD11D226F91656006FA8EB /* Products */;
 			projectDirPath = "";
@@ -226,6 +260,8 @@
 				F0AD11D726F91656006FA8EB /* ArticlesView.swift in Sources */,
 				F002515C26FA9C1E00643C18 /* APIClient.swift in Sources */,
 				F002515126FA994300643C18 /* Meta.swift in Sources */,
+				F002516626FABB6E00643C18 /* ArticleItem.swift in Sources */,
+				F002516426FAB4E500643C18 /* ArticlesViewModel.swift in Sources */,
 				F002515F26FAB1F600643C18 /* Dictionary+Additions.swift in Sources */,
 				F0AD11D526F91656006FA8EB /* TrippApp.swift in Sources */,
 				F002515726FA99DD00643C18 /* Headline.swift in Sources */,
@@ -372,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpmcglone.Tripp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -394,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpmcglone.Tripp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -430,6 +466,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		F002516726FABBE100643C18 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -437,6 +481,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F002514826FA96D800643C18 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F002516826FABBE100643C18 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F002516726FABBE100643C18 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
