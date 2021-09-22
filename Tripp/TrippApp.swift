@@ -17,6 +17,7 @@ struct TrippApp: App {
             NavigationView {
                 ArticlesView(model: articlesViewModel)
             }
+            .preferredColorScheme(.light)
         }
     }
 }
