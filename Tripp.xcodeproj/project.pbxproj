@@ -20,6 +20,7 @@
 		F002516426FAB4E500643C18 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002516326FAB4E500643C18 /* ArticlesViewModel.swift */; };
 		F002516626FABB6E00643C18 /* ArticleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002516526FABB6E00643C18 /* ArticleItem.swift */; };
 		F002516926FABBE100643C18 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F002516826FABBE100643C18 /* SDWebImageSwiftUI */; };
+		F07017A82716222E00D45B5E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07017A72716222E00D45B5E /* Config.swift */; };
 		F0AD11D526F91656006FA8EB /* TrippApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD11D426F91656006FA8EB /* TrippApp.swift */; };
 		F0AD11D726F91656006FA8EB /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD11D626F91656006FA8EB /* ArticlesView.swift */; };
 		F0AD11D926F91657006FA8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AD11D826F91657006FA8EB /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		F002515E26FAB1F600643C18 /* Dictionary+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Additions.swift"; sourceTree = "<group>"; };
 		F002516326FAB4E500643C18 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		F002516526FABB6E00643C18 /* ArticleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleItem.swift; sourceTree = "<group>"; };
+		F07017A72716222E00D45B5E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F0AD11D126F91656006FA8EB /* Tripp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AD11D426F91656006FA8EB /* TrippApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippApp.swift; sourceTree = "<group>"; };
 		F0AD11D626F91656006FA8EB /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				F0AD11D826F91657006FA8EB /* Assets.xcassets */,
 				F0AD11DD26F91657006FA8EB /* Info.plist */,
 				F0AD11DA26F91657006FA8EB /* Preview Content */,
+				F07017A72716222E00D45B5E /* Config.swift */,
 			);
 			path = Tripp;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				F002515326FA998300643C18 /* Article.swift in Sources */,
 				F002514D26FA984F00643C18 /* Envelope.swift in Sources */,
 				F0AD11D726F91656006FA8EB /* ArticlesView.swift in Sources */,
+				F07017A82716222E00D45B5E /* Config.swift in Sources */,
 				F002515C26FA9C1E00643C18 /* APIClient.swift in Sources */,
 				F002515126FA994300643C18 /* Meta.swift in Sources */,
 				F002516626FABB6E00643C18 /* ArticleItem.swift in Sources */,

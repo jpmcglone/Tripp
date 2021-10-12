@@ -6,7 +6,7 @@ struct TrippApp: App {
     
     init() {
         let articlesService = ArticleService(
-            apiKey: "AmGyRUolA0PvrJK5hrfAweLzqjmIfp7E"
+            apiKey: Config.NYTimes.apiKey
         )
         
         _articlesViewModel = StateObject(wrappedValue: ArticlesViewModel(service: articlesService))
